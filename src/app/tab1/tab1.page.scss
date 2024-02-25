@@ -1,0 +1,16 @@
+:host {
+  .swiper {
+    --swiper-theme-color: var(--ion-color-tertiary);
+    --swiper-navigation-size: 32px;
+    --swiper-pagination-bottom: 18px;
+  }
+}
+
+.slider {
+
+  &-wrapper {
+    margin: 16px;
+    padding: 24px;
+    width: calc(100% - 32px);
+  }
+}
