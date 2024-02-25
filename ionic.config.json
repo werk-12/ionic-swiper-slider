@@ -1,0 +1,7 @@
+{
+  "name": "ionic-swiper-slider",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
