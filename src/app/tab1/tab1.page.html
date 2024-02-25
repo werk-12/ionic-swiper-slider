@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="false">
   <ion-toolbar>
     <ion-title>
       Tab 1
@@ -13,5 +13,14 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="slider-wrapper">
+    <swiper-container #swiper appSwiper [config]="swiperConfig" class="swiper">
+      <swiper-slide class="swiper-slide" *ngFor="let item of slides; trackBy: trackById">
+        <div class="slider">
+          <img class="slider__img" src="{{ item.src }}" alt="{{ item.title }}">
+        </div>
+      </swiper-slide>
+      <div class="swiper-pagination"></div>
+    </swiper-container>
+  </div>
 </ion-content>
